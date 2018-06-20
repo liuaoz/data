@@ -10,13 +10,15 @@ spring:
       password: 111111
       driver-class-name: com.mysql.jdbc.Driver
 mybatis:
-  config-location: classpath:mapper/*.xml
   type-aliases-package: com.liuaoz.model
+  mapper-locations: classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  params: count=countSql
+
+
+#pagehelper:
+#  helper-dialect: mysql
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: count=countSql
 
