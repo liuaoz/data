@@ -20,6 +20,9 @@ public class DemoServiceImpl implements IDemoService {
 
     @Override
     public DemoEntity getByName(String name) {
+        demoMapper.selectByPrimaryKey(1);
+        DemoEntity param = new DemoEntity();
+        param.setName(name);
         return demoMapper.selectByName(name);
     }
 }

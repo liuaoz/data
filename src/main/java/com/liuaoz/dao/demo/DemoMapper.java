@@ -1,10 +1,9 @@
 package com.liuaoz.dao.demo;
 
 import com.liuaoz.model.demo.DemoEntity;
-import org.apache.ibatis.annotations.Mapper;
+import tk.mybatis.mapper.common.Mapper;
 
-@Mapper
-public interface DemoMapper {
+public interface DemoMapper extends Mapper<DemoEntity> {
 
     DemoEntity selectByName(String name);
 
