@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Id;
 import java.util.Date;
 
 /**
@@ -14,6 +15,7 @@ import java.util.Date;
 @NoArgsConstructor
 public abstract class BaseEntity {
 
+    @Id
     public Long id;
 
     public String creator;

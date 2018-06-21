@@ -1,7 +1,7 @@
 package com.liuaoz.service.demo.impl;
 
 import com.liuaoz.dao.demo.DemoMapper;
-import com.liuaoz.model.demo.DemoEntity;
+import com.liuaoz.model.demo.Demo;
 import com.liuaoz.service.demo.IDemoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -19,9 +19,13 @@ public class DemoServiceImpl implements IDemoService {
     private DemoMapper demoMapper;
 
     @Override
-    public DemoEntity getByName(String name) {
-        demoMapper.selectByPrimaryKey(1);
-        DemoEntity param = new DemoEntity();
+    public Demo getByName(String name) {
+        Demo demo = demoMapper.selectByPrimaryKey(1L);
+
+        log.info(demo.toString());
+
+        log.info("=======");
+        Demo param = new Demo();
         param.setName(name);
         return demoMapper.selectByName(name);
     }

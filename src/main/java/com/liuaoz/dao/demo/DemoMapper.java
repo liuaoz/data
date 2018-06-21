@@ -1,10 +1,10 @@
 package com.liuaoz.dao.demo;
 
-import com.liuaoz.model.demo.DemoEntity;
+import com.liuaoz.model.demo.Demo;
 import tk.mybatis.mapper.common.Mapper;
 
-public interface DemoMapper extends Mapper<DemoEntity> {
+public interface DemoMapper extends Mapper<Demo> {
 
-    DemoEntity selectByName(String name);
+    Demo selectByName(String name);
 
 }

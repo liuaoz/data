@@ -13,7 +13,7 @@ import lombok.ToString;
 @Getter
 @NoArgsConstructor
 @ToString
-public class DemoEntity extends BaseEntity{
+public class Demo extends BaseEntity{
 
     private String name;
 
