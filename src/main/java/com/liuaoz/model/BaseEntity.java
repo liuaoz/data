@@ -1,8 +1,6 @@
 package com.liuaoz.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Id;
 import java.util.Date;
@@ -10,9 +8,7 @@ import java.util.Date;
 /**
  * Created by matrix_stone on 2018/6/20.
  */
-@Setter
-@Getter
-@NoArgsConstructor
+@Data
 public abstract class BaseEntity {
 
     @Id

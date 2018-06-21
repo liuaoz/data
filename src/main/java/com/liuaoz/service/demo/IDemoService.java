@@ -7,5 +7,7 @@ import com.liuaoz.model.demo.Demo;
  */
 public interface IDemoService {
 
+    Demo getById(Long id);
+
     Demo getByName(String name);
 }

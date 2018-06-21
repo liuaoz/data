@@ -12,10 +12,16 @@ import javax.annotation.Resource;
  * Created by matrix_stone on 2018/6/20.
  */
 @Slf4j
-public class DemoServiceImplTest extends DataApplicationTests{
+public class DemoServiceImplTest extends DataApplicationTests {
 
     @Resource
     private IDemoService iDemoService;
+
+    @Test
+    public void getById() throws Exception {
+        Demo demo = iDemoService.getById(1L);
+        log.info(demo.toString());
+    }
 
     @Test
     public void getByName() {

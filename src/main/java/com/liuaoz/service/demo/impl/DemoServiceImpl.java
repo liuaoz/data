@@ -19,6 +19,11 @@ public class DemoServiceImpl implements IDemoService {
     private DemoMapper demoMapper;
 
     @Override
+    public Demo getById(Long id) {
+        return demoMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
     public Demo getByName(String name) {
         Demo demo = demoMapper.selectByPrimaryKey(1L);
 
