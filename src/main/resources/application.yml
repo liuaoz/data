@@ -22,3 +22,7 @@ mybatis:
 #  support-methods-arguments: true
 #  params: count=countSql
 
+
+lombok:
+  equalsAndHashCode:
+    callSuper: call
